@@ -60,14 +60,17 @@
         background-color: hsl(227, 47%, 96%);
         justify-content: center;
         align-items: center;
-        
         border-radius: 5px;
         padding: 0;
         margin-bottom: 1rem;
+        cursor: pointer;
     }
     .card img{
         width: 20px;
         height: 20px;
+    }
+    .card:hover {
+        background-color: hsl(227, 47%, 90%);
     }
     .usnm , .up,.dwn{
         display: flex;
@@ -120,12 +123,20 @@
         flex-direction: column;
         background-color: hsl(227, 47%, 96%);
         padding: 1rem 1.5rem;
+        color:  hsl(227, 17%, 49%);
         font-size: 17px;
         font-weight: 600;
         border-radius: 10px;
-        color:hsl(228, 12%, 44%);
+        color:hsl(228, 34%, 66%);
         margin-bottom: 1rem;
+        cursor: pointer;
+        
     }
+    .page:hover {
+        background-color: hsl(227, 47%, 90%);
+    }
+   
+    /* .page: */
 
     .page div{
         display: flex;
@@ -137,12 +148,20 @@
         width: 20px;
         height: 20px;
     }
+    #im-tw, #im-yt, #im-ig, #im-fb, #im-dk{
+        width: 20px;
+        height: 20px;
+    }
+    
     .page img{
         width: 8px;
         height: 8px;
     }
     .rt{
         color:  hsl(163, 72%, 41%);
+    }
+    .dn{
+        color: hsl(356, 69%, 56%);
     }
     .o-num{
         font-size: 35px;
@@ -151,10 +170,17 @@
         margin: 0;
         padding: 0;;
     }
-   
+   #dk{
+    cursor: pointer;
+   }
     
 
 @media(min-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 1rem 5rem;
+        margin: 0 1rem;
+    }
     .head{
         border-bottom: none;
         width: auto;
@@ -164,6 +190,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 1rem;
     }
     .srn-mode{
         gap: 10px;
@@ -179,24 +206,13 @@
         width: 100%;
     }
     .views{
-        /* display: flex;
-        flex-direction: row;
-        flex-flow: row wrap;
-       
-        margin: 1rem 0; */
         display: grid;
-        grid-template-columns: 4;
-        gri
-        /* flex-wrap: wrap; */
-        column-gap: 20px;
-        /* justify-content: space-between; */
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin-bottom: 1rem;
     }
     .page{
-        flex: 0 0 25%;
-        max-width: 100%;
-        box-sizing: border-box;
-        /* margin: 0 10px; */
-        /* width: 20%; */
+        margin-bottom: 0;
     }
 
 }
